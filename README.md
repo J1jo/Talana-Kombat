@@ -28,10 +28,10 @@ TalanaKombat es un simulador de pelea text-based de dos jugadores donde Tonnyn S
   git clone https://github.com/J1jo/Talana-Kombat.git
 ```
 
-### 2.- Obtener imagen
+### 2.- Levantar el contenedor
 
 ```bash
-  docker pull jijoo/talana-kombat
+  docker-compose up
 ```
 
 ### 3.- Casos de prueba
