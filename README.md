@@ -42,6 +42,6 @@ En la raíz se encuentra un archivo llamado `fight_script.json`, desde el cual s
 *Para poder ejecutar las pruebas deberá ejecutar el siguiente comando*
 
 ```bash
-  docker run jijoo/talana-kombat
+  docker-compose run app python main.py
 ```
 
