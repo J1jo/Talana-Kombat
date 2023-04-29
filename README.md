@@ -25,23 +25,24 @@ TalanaKombat es un simulador de pelea text-based de dos jugadores donde Tonnyn S
 ### 1.- Debes clonar el proyecto
 
 ```bash
-  git clone https://github.com/J1jo/Talana-Kombat.git
+  git clone https://github.com/J1jo/SII_api.git
 ```
 
-### 2.- Levantar el contenedor
+### 2.- Crear ambiente virtual
 
 ```bash
-  docker-compose up
+  python -m venv env
+  env\Scripts\activate
 ```
 
 ### 3.- Casos de prueba
 
-En la raíz se encuentra un archivo llamado `fight_script.json`, desde el cual se obtienen los datos para la pelea. Para probar diferentes casos es necesario modificar este archivo.
+En la raíz se encuentra una carpeta llamada `tests` dentro de ella un archivo llamado `test_api.py`, desde el cual se hacen pruebas unitarias. Para probar diferentes casos es necesario modificar este archivo.
 ## Ejecutar pruebas
 
 *Para poder ejecutar las pruebas deberá ejecutar el siguiente comando*
 
 ```bash
-  docker-compose run app python main.py
+  python -m unittest discover -s tests/
 ```
 
